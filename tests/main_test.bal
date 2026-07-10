@@ -13,9 +13,9 @@ function smokeTest() {
 // patch (e.g. 2.8.1) here, even though the committed Dependencies.toml locks 2.8.0
 // and Ballerina.toml has `sticky = true`. The build log resolves 2.8.0.
 // Remove this test once you've captured the logs.
-@test:Config {}
-function forceFailToSurfaceRunnerLogs() {
-    test:assertFail("INTENTIONAL FAIL: inspect the dependency resolution above — " +
-        "ballerina/time drifted to the latest patch in the unit-test runner " +
-        "(committed lock = 2.8.0). This proves the runner ignores the lock.");
-}
+// @test:Config {}
+// function forceFailToSurfaceRunnerLogs() {
+//    test:assertFail("INTENTIONAL FAIL: inspect the dependency resolution above — " +
+//        "ballerina/time drifted to the latest patch in the unit-test runner " +
+//        "(committed lock = 2.8.0). This proves the runner ignores the lock.");
+// }
